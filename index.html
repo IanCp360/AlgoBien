@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Personal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    main {
+      padding: 20px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenido a Mi Página Web</h1>
+    <p>Hecha con HTML, CSS y JavaScript</p>
+  </header>
+
+  <main>
+    <h2>Sobre mí</h2>
+    <p>Hola, soy una persona interesada en el desarrollo web. Esta es mi primera página.</p>
+
+    <h2>Interacción</h2>
+    <button onclick="saludar()">Haz clic aquí</button>
+    <p id="mensaje"></p>
+  </main>
+
+  <script>
+    function saludar() {
+      document.getElementById("mensaje").innerText = "¡Gracias por visitar mi sitio!";
+    }
+  </script>
+
+</body>
+</html>
