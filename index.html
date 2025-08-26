@@ -2,55 +2,53 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Personal</title>
+  <title>Ballenita Azul Kawaii</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #4CAF50;
-      padding: 20px;
-      text-align: center;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* fondo oceánico */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: 'Comic Sans MS', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       color: white;
+      text-shadow: 1px 1px 3px #000;
     }
-    main {
-      padding: 20px;
-    }
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
+
+    .ballenita {
+      width: 200px;
       cursor: pointer;
+      transition: transform 0.3s ease;
     }
-    button:hover {
-      background-color: #45a049;
+
+    .ballenita:hover {
+      transform: scale(1.1);
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      font-size: 24px;
+      display: none;
+      background: rgba(0, 0, 50, 0.5);
+      padding: 10px 20px;
+      border-radius: 15px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Bienvenido a Mi Página Web</h1>
-    <p>Hecha con HTML, CSS y JavaScript</p>
-  </header>
+  <img src="3421.png" alt="Ballenita Azul" class="ballenita" onclick="presentarse()">
 
-  <main>
-    <h2>Sobre mí</h2>
-    <p>Hola, soy una persona interesada en el desarrollo web. Esta es mi primera página.</p>
-
-    <h2>Interacción</h2>
-    <button onclick="saludar()">Haz clic aquí</button>
-    <p id="mensaje"></p>
-  </main>
+  <div id="mensaje">¡Hola! Soy la ballenita kawai Luken 🐳✨</div>
 
   <script>
-    function saludar() {
-      document.getElementById("mensaje").innerText = "¡Gracias por visitar mi sitio!";
+    function presentarse() {
+      document.getElementById("mensaje").style.display = "block";
     }
   </script>
 
